@@ -1,52 +1,20 @@
-# Prática: Lógica de Programação
+# cra-template-typescript
 
-Esta prática contém uma lista de 11 exercícios em JavaScript. 
+This is the official TypeScript template for [Create React App](https://github.com/facebook/create-react-app).
 
-Ela será iniciada em aula, com ajuda do instrutor, mas será encorajado que cada aluno tente desenvolver soluções por conta própria.
+To use this template, add `--template typescript` when creating a new app.
 
-Caso tenha dúvidas ou problemas com a prática, peça ajuda ao instrutor ou tente estudá-la junto de seu mentor.
+For example:
 
-## Exercícios
+```sh
+npx create-react-app my-app --template typescript
 
-1. Faça um programa que mostre a contagem de 1 a 10.
+# or
 
-2. Faça um programa que mostre a contagem de 10 a 1.
+yarn create react-app my-app --template typescript
+```
 
-3. Faça um programa que recebe um número inteiro e mostre a contagem de 1 até tal número.
+For more information, please refer to:
 
-4. Faça um programa que mostre todos os números primos de 0 a 100.
-
-5. Faça um programa que mostre as tabuadas dos números de 1 a 10 usando laços de repetição.
-
-6. Faça um programa que recebe um número inteiro e mostre a tabuada desse número.
-
-7. Faça um programa que recebe um número inteiro e mostre os números pares e ímpares (separados), de 1 até esse inteiro.
-
-8. Faça um programa que receba 5 idades, calcule e mostre a média das idades digitadas.
-
-9. Faça um programa que receba a idade de dez pessoas e que calcule e mostre a quantidade de pessoas com idade maior ou igual a 18 anos.
-
-10. Faça um programa que lê o tamanho dos lados de um quadrado e imprime um quadrado do mesmo tamanho usando asteriscos.
-
-Por exemplo, para um quadrado de lados iguais a 5:
-~~~javascript
-*****
-*****
-*****
-*****
-*****
-~~~
-
-11. Faça um programa que recebe a altura de um triangulo em um número inteiro e imprima-o utilizando asteriscos.
-
-Exemplo:
-
-Entrada: 5
-
-~~~javascript
-*
-**
-***
-****
-*****
-~~~
+- [Getting Started](https://create-react-app.dev/docs/getting-started) – How to create a new app.
+- [User Guide](https://create-react-app.dev) – How to develop apps bootstrapped with Create React App.
