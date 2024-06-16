@@ -1,9 +1,10 @@
+[create a local branch]
 => git checkout -b 01-hello-world-html
-    create a local branch
-
-=> git push -u origin 01-hello-world-html
-    pushe the local branch on github
-
-
 => git checkout -b 02-html-article
 => git checkout -b 02-html-form
+
+
+
+[push the local branch on github]
+=> git push -u origin {brnach-name}
+    
