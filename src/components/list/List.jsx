@@ -1,4 +1,4 @@
-import ListItem from '../listItem/ListItem.jsx';
+import ListItem from '../list-item/ListItem.jsx';
 import './List.css';
 
 export function List({ items = [] }) {

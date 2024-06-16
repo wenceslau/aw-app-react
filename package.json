@@ -18,6 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/**/*.{js,jsx}",
+    "lint-fix": "eslint./src/**/*.{js,jsx} --fix",
     "prepare": "husky"
   },
   "eslintConfig": {
