@@ -2,30 +2,16 @@
 <html lang="pt-BR">
 
 <head>
-    <title>Formulário de contato</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <section class="form-wrapper">
-        <h2 class="form-title">Formulário de Contato</h2>
-        <form id="contact-form">
-            <div class="form-input-group">
-                <label for="name">Nome:</label><br>
-                <input type="text" id="name" name="name" required><br>
-            </div>
-            <div class="form-input-group">
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br>
-            </div>
-            <div class="form-input-group">
-                <label for="message">Mensagem:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-            </div>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
-    <script type="text/javascript" src="scripts.js"></script>
+    <header class="header">
+        <h1>Blog Example</h1>
+    </header>
+    <section id="posts"></section>
+    <script src="/js/posts.js"></script>
 </body>
 
 </html>

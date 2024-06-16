@@ -2,8 +2,7 @@
 => git checkout -b 01-hello-world-html
 => git checkout -b 02-html-article
 => git checkout -b 02-html-form
-
-
+=> git checkout -b 02-html-blog
 
 [push the local branch on github]
 => git push -u origin {brnach-name}
