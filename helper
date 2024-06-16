@@ -5,6 +5,7 @@
 => git checkout -b 02-html-blog
 => git checkout -b 03-flexbox
 => git checkout -b 03-grid
+=> git checkout -b 04-javascript
 
 [push the local branch on github]
 => git push -u origin {brnach-name}

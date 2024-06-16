@@ -1,7 +1,18 @@
-# Prática: Layout com CSS Flexbox
+# Demonstração: Conceitos de JavaScript
 
-![Layout a ser reproduzido](image.png)
+Esta demonstração contém exemplos de códigos básicos em JavaScript, que mostram como são programados recursos fundamentais da linguagem.
 
-Nesta prática, a tarefa será recriar visualmente, na tela do navegador, o que consta na imagem acima. Deverá ser usado CSS Flexbox nesta construção.
+Os códigos exemplificam sobre os seguintes conceitos:
+
+* Variáveis
+* Constantes
+* Tipos básicos de dados
+* Objetos
+* Arrays (matrizes)
+* Condicionais
+* Funções
+* Operadores Aritméticos
+* Operadores Lógicos
+* Loops
 
 Caso tenha dúvidas ou problemas com a prática, peça ajuda ao instrutor ou tente estudá-la junto de seu mentor.
