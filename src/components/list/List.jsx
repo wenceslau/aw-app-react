@@ -1,20 +1,16 @@
-import Item from '../item/Item.jsx';
+import ListItem from '../listItem/ListItem.jsx';
+import './List.css';
 
-export function List({ items = [], onItemClick }) {
-    const handleItemClick = (item) => {
-        onItemClick && onItemClick(item);
-    };
-
+export function List({ items = [] }) {
     const map = items.map((item) => {
         return (
-            <Item key={item.id} item={item} onItemClick={handleItemClick} />
+            <ListItem key={item.id} item={item} />
         );
     });
 
     return (
-        <div>
-            <h2>Lista de Usuários</h2>
-            <ul>
+        <div className='list-wrapper'>
+            <ul className='list'>
                 {map}
             </ul>
         </div>
