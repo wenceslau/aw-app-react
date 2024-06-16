@@ -1,0 +1,5 @@
+=> git checkout -b 01-hello-world-html
+    create a local branch
+
+git push -u origin 01-hello-world-html
+    pushe the local branch on github
