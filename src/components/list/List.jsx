@@ -3,12 +3,12 @@ import Item from '../item/Item.jsx';
 export function List({ items = [], onItemClick }) {
     const handleItemClick = (item) => {
         onItemClick && onItemClick(item);
-    }
+    };
 
     const map = items.map((item) => {
         return (
             <Item key={item.id} item={item} onItemClick={handleItemClick} />
-        )
+        );
     });
 
     return (

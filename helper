@@ -32,6 +32,57 @@ npx create-react-app {app-name} --template redux-typescript
 npx create-react-app {app-name} --template typescript
     {to create a react app with typescript}
 
+npm start
+    {to start an application}
+
+npm remove {dependency-name}
+    {to remove a dependency}
+
 [react dependencies]
 npm i react-router-dom
     {to install react-router-dom - https://www.npmjs.com/package/react-router-dom}
+
+
+[react dev experience dependencies]
+    {ESLint} extension on VSCode is advised to install to hilight the error 
+        React native app already has eslint integrated on package json file. the rules shoulbe be declared there
+        Nextjs React app the esling should be installed, and the rules should be declared on the .eslintrc file
+
+        {Eslint commands}
+            npm run lint or ng lint for Angular Project
+                [to run the eslint on the project]
+            npm run lint -- --fix
+                [to run the eslint on the project and fix the errors]
+
+    {Error Lens} extension on VSCode is also advised to show the javascript error on the source code
+
+    {Import Cost} extension on VSCode is also advised to show the size of the imported library
+
+    {editorconfig} extensions on VSCode is used to configure the editor settings, like indentation spaces, etc.
+        It is necessary t create a file .editorconfig on the root of the project 
+        On the IntelliJ is not necessary to install any extensions or plugins, the IDE already has the ESLint integrated
+
+    {commitlint}, library to standardize the commit messages, works with husky
+    {conventional commits}, library to standardize the commit messages {https://www.conventionalcommits.org/pt-br/v1.0.0/}
+    the file commitlint config should be created
+
+    npm install @commitlint/cli @commitlint/config-conventional -D
+        [to install commitlint and config conventional messages]
+
+    {husky}, library to standardize the commit messages, hooks which can execute some commands before commits
+    npm install husky -D
+        [to install husky]
+    npx husky init
+        [to initialize husky, create the .husky folder and the pre-commit file]
+
+        .husky\commit-msg
+            run the command commitlint to evaluate the commit message if it is follow the conventional commits rules
+
+        .husky\pre-commit
+            run the command npm run lint to evaluate the code before the commit
+
+
+    {prettier}, library to format the code, to format the code on save
+        require a extension on VSCode
+        require a file .prettierrc on the root of the project, if does not exist the prettier will use the default settings
+
