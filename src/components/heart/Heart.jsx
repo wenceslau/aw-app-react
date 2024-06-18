@@ -3,6 +3,7 @@ import './Heart.css';
 function Heart({ onClick, selected = false }) {
   return (
     <svg
+      data-testid="heart"
       version="1.1"
       viewBox="0 0 472.7 472.7"
       className={`heart${selected ? ' heart-selected' : ''}`}

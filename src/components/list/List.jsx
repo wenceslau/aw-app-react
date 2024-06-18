@@ -9,8 +9,8 @@ function List({ items = [] }) {
   });
 
   return (
-    <div className='list-wrapper'>
-      <ul className='list'>
+    <div className='list-wrapper' data-testid="list">
+      <ul className="list">
         {map}
       </ul>
     </div>
