@@ -1,9 +1,9 @@
 import './Heart.css';
 
-function Heart({ onClick, selected = false }) {
+function Heart({ onClick, selected, testId = false }) {
   return (
     <svg
-      data-testid="heart"
+      data-testid={testId}
       version="1.1"
       viewBox="0 0 472.7 472.7"
       className={`heart${selected ? ' heart-selected' : ''}`}

@@ -109,6 +109,12 @@ npm i redux-mock-store -D
     {to install redux-mock-store, https://www.npmjs.com/package/redux-mock-store}
 
 npm install cypress -D
+    {to install cypress}
+npx cypress open
+    {to open cypress and to create the initial configuration}
+npm install eslint-plugin-cypress -D
+    {plugin for eslint not complain about cypres}
+
 
 
 
