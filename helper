@@ -14,6 +14,9 @@
 => git checkout -b 07-react-dx
 => git checkout -b 08-react-api
 => git checkout -b 08-react-redux
+=> git checkout -b 10-react-zustand
+=> git checkout -b 11-react-unit-tests
+
 
 [create a local branch]
 => git checkout -b <brnach-name>
@@ -104,6 +107,9 @@ npm i @testing-library/react @testing-library/dom -D
 
 npm i redux-mock-store -D
     {to install redux-mock-store, https://www.npmjs.com/package/redux-mock-store}
+
+npm install cypress -D
+
 
 
 [ZUSTAND]
