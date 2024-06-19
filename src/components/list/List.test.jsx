@@ -31,8 +31,6 @@ const mockedItems = [
   }
 ];
 
-const mockedFavorites = [1];
-
 describe('List Component', () => {
 
   const initialState = {mockedItem};
