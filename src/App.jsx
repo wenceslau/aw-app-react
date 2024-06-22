@@ -1,12 +1,9 @@
 
 import { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
 import './App.css';
-// import { List } from './components';
 import List from './components/list/List';
 
 function App() {
-  const dispatch = useDispatch();
   const [items, setItems] = useState([]);
 
   const loadDetails = (items) => {
@@ -31,7 +28,7 @@ function App() {
       .catch(() => {
         console.error('Error');
       });
-  }, [dispatch]);
+  }, []);
 
   return (
     <div>
