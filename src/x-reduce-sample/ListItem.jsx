@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { favoritesActions } from '../../store/favorites';
+import {favoritesActions} from './favorites';
+
 import './ListItem.css';
-import Heart from '../heart/Heart';
+import Heart from '../components/heart/Heart';
 
 function ListItem({ item }) {
     const favorites = useSelector(({ favorites }) => favorites);

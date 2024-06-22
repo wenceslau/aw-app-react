@@ -54,6 +54,8 @@ npm i @reduxjs/toolkit@1.8.6
 npm i react-redux
     {to install react-redux}
 
+npm i zustand
+    {to install zustand}
 
 [react dev experience dependencies]
     {ESLint} extension on VSCode is advised to install to hilight the error
