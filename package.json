@@ -23,13 +23,16 @@
     "lint": "eslint ./src/**/*.{js,jsx}",
     "lint-fix": "eslint./src/**/*.{js,jsx} --fix",
     "prepare": "husky",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest",
-      "plugin:cypress/recommended"
+      "plugin:cypress/recommended",
+      "plugin:storybook/recommended"
     ],
     "rules": {}
   },
@@ -46,12 +49,26 @@
     ]
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/preset-create-react-app": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-webpack5": "^8.1.10",
+    "@storybook/test": "^8.1.10",
     "cypress": "^13.12.0",
     "eslint-plugin-cypress": "^3.3.0",
+    "eslint-plugin-storybook": "^0.8.0",
     "husky": "^9.0.11",
-    "redux-mock-store": "^1.5.4"
+    "prop-types": "^15.8.1",
+    "redux-mock-store": "^1.5.4",
+    "storybook": "^8.1.10",
+    "webpack": "^5.92.1"
   },
   "jest": {
     "collectCoverageFrom": [
