@@ -1,9 +1,7 @@
-# Prática: Mini Blog Dinâmico
+# Prática: Layout com CSS Flexbox
 
-Nesta prática, criaremos um mini blog com HTML, CSS e JavaScript. As tarefas são:
+![Layout a ser reproduzido](image.png)
 
-1. criar uma página web que contenha alguns posts listados;
-2. exibir posts na página usando JavaScript;
-estilizar (formatar) os elementos da página usando CSS.
+Nesta prática, a tarefa será recriar visualmente, na tela do navegador, o que consta na imagem acima. Deverá ser usado CSS Flexbox nesta construção.
 
 Caso tenha dúvidas ou problemas com a prática, peça ajuda ao instrutor ou tente estudá-la junto de seu mentor.
