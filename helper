@@ -14,6 +14,8 @@
 => git checkout -b 07-react-dx
 => git checkout -b 08-react-api
 => git checkout -b 08-react-redux
+=> git checkout -b 09-react-context-api
+=> git checkout -b 10-react-zustand
 
 [create a local branch]
 => git checkout -b <brnach-name>
@@ -50,6 +52,8 @@ npm i @reduxjs/toolkit@1.8.6
 
 npm i react-redux
     {to install react-redux}
+
+npm i zustand
 
 
 [react dev experience dependencies]
