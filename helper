@@ -7,7 +7,19 @@
 => git checkout -b 03-grid
 => git checkout -b 04-javascript
 => git checkout -b 04-programmng-logic
+=> git checkout -b 05-react-create
+=> git checkout -b 05-react-cleanup
 
 [push the local branch on github]
 => git push -u origin {brnach-name}
     
+
+[react commands]
+npx create-react-app {app-name}
+    {to create a react app with default settings and javascript}
+
+npx create-react-app {app-name} --template redux-typescript
+    {to create a react app with redux and typescript}
+
+npx create-react-app {app-name} --template typescript
+    {to create a react app with typescript}
