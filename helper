@@ -10,9 +10,16 @@
 => git checkout -b 05-react-create
 => git checkout -b 05-react-cleanup
 => git checkout -b 05-react-users-list
+=> git checkout -b 06-react-routing
+
+[create a local branch]
+=> git checkout -b <brnach-name>
 
 [push the local branch on github]
-=> git push -u origin {brnach-name}
+=> git push -u origin <brnach-name>
+
+[delete a local branch]
+=> git branch -D <local-branch>
     
 
 [react commands]
@@ -24,3 +31,7 @@ npx create-react-app {app-name} --template redux-typescript
 
 npx create-react-app {app-name} --template typescript
     {to create a react app with typescript}
+
+[react dependencies]
+npm i react-router-dom
+    {to install react-router-dom - https://www.npmjs.com/package/react-router-dom}

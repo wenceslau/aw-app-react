@@ -1,27 +1,9 @@
 import './App.css';
-import List from './components/list';
+import Navigation from './components/navigation/Navigation.jsx';
 
 function App() {
-  const users = [
-    {
-      id: 0,
-      name: 'Siri'
-    },
-    {
-      id: 1,
-      name: 'Alexa'
-    },
-    {
-      id: 2,
-      name: 'Google Assistente'
-    }
-  ];
-
-
   return (
-    <div>
-      <List items={users} />
-    </div>
+    <Navigation />
   );
 }
 

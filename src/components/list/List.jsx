@@ -1,9 +1,13 @@
-import Item from '../item';
+import Item from '../item/Item.jsx';
 
-function List({ items = [] }) {
+export function List({ items = [], onItemClick }) {
+    const handleItemClick = (item) => {
+        onItemClick && onItemClick(item);
+    }
+
     const map = items.map((item) => {
         return (
-            <Item key={item.id} item={item} />
+            <Item key={item.id} item={item} onItemClick={handleItemClick} />
         )
     });
 
@@ -16,5 +20,3 @@ function List({ items = [] }) {
         </div>
     );
 }
-
-export default List;
