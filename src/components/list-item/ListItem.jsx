@@ -3,9 +3,6 @@ import { favoritesActions } from '../../store/favorites';
 import './ListItem.css';
 import Heart from '../heart/Heart';
 
-
-
-
 function ListItem({ item }) {
     const favorites = useSelector(({ favorites }) => favorites);
     const dispatch = useDispatch();
