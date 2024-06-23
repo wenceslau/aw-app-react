@@ -1,18 +1,20 @@
-import ListItem from '../listItem/ListItem.jsx';
 import './List.css';
+import ListItem from '../list-item/ListItem';
 
-export function List({ items = [] }) {
-    const map = items.map((item) => {
-        return (
-            <ListItem key={item.id} item={item} />
-        );
-    });
-
+function List({ items = [] }) {
+  const map = items.map((item) => {
     return (
-        <div className='list-wrapper'>
-            <ul className='list'>
-                {map}
-            </ul>
-        </div>
+      <ListItem key={item.id} item={item} />
     );
+  });
+
+  return (
+    <div className='list-wrapper'>
+      <ul className='list'>
+        {map}
+      </ul>
+    </div>
+  );
 }
+
+export default List;

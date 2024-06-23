@@ -13,6 +13,7 @@
 => git checkout -b 06-react-routing
 => git checkout -b 07-react-dx
 => git checkout -b 08-react-api
+=> git checkout -b 08-react-redux
 
 [create a local branch]
 => git checkout -b <brnach-name>
@@ -43,6 +44,12 @@ npm remove {dependency-name}
 [react dependencies]
 npm i react-router-dom
     {to install react-router-dom - https://www.npmjs.com/package/react-router-dom}
+
+npm i @reduxjs/toolkit@1.8.6
+    {to install @reduxjs/toolkit version 1.8.6}
+
+npm i react-redux
+    {to install react-redux}
 
 
 [react dev experience dependencies]
@@ -88,3 +95,8 @@ npm i react-router-dom
         require a extension on VSCode
         require a file .prettierrc on the root of the project, if does not exist the prettier will use the default settings
 
+
+
+
+[ZUSTAND]
+<<<<<<https://docs.pmnd.rs/zustand/getting-started/introduction>>>>>>
