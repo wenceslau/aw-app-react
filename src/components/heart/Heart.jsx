@@ -1,6 +1,6 @@
 import './Heart.css';
 
-function Heart({ onClick, selected, testId = false }) {
+function Heart({ onClick, testId, selected = false }) {
   return (
     <svg
       data-testid={testId}

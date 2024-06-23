@@ -20,13 +20,16 @@ function ListItem({item}) {
     }
   };
   return (
-    <li className="list-item">
+    <li className="list-item" data-testid={`list-item-${item.id}`}>
       <div className="list-item-image-wrapper">
         <img alt={name} className="list-item-image" src={sprite}/>
       </div>
       <p>{name}</p>
       <div className="list-item-heart-wrapper">
-        <Heart onClick={handleClick} selected={isFavorite} />
+        <Heart
+          onClick={handleClick}
+          selected={isFavorite}
+          testId={`heart-${item.id}`} />
       </div>
     </li>
   );
