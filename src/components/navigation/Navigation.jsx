@@ -15,6 +15,6 @@ const Navigation = () => {
             </Routes>
         </BrowserRouter>
     );
-}
+};
 
 export default Navigation;

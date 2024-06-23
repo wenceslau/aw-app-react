@@ -1,7 +1,7 @@
 function Item({ item, onItemClick }) {
     const handleClick = () => {
         onItemClick && onItemClick(item);
-    }
+    };
 
     return (
         <li>

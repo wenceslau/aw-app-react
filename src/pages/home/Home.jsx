@@ -8,7 +8,7 @@ const Home = () => {
     const handleClick = (item) => {
         const { id } = item;
         navigate(`/details/${id}`);
-    }
+    };
 
     return (
         <div>
