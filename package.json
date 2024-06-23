@@ -22,12 +22,14 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src/**/*.{js,jsx}",
     "lint-fix": "eslint./src/**/*.{js,jsx} --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "cy:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:cypress/recommended"
     ],
     "rules": {}
   },
@@ -46,12 +48,15 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "cypress": "^13.12.0",
+    "eslint-plugin-cypress": "^3.3.0",
     "husky": "^9.0.11",
     "redux-mock-store": "^1.5.4"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/components/**/*.{js,jsx}"
+      "src/components/**/*.{js,jsx}",
+      "!src/components/**/*.cy.{js,jsx}"
     ],
     "coverageReporters": [
       "lcov"

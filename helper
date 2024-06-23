@@ -14,8 +14,10 @@
 => git checkout -b 07-react-dx
 => git checkout -b 08-react-api
 => git checkout -b 08-react-redux
-=> git checkout -b 09-react-context-api
 => git checkout -b 10-react-zustand
+=> git checkout -b 11-react-unit-tests
+=> git checkout -b 12-react-storybook
+=> git checkout -b 09-react-context-api
 
 [create a local branch]
 => git checkout -b <brnach-name>
@@ -54,7 +56,7 @@ npm i react-redux
     {to install react-redux}
 
 npm i zustand
-
+    {to install zustand}
 
 [react dev experience dependencies]
     {ESLint} extension on VSCode is advised to install to hilight the error
@@ -108,6 +110,15 @@ npm i @testing-library/react @testing-library/dom -D
 
 npm i redux-mock-store -D
     {to install redux-mock-store, https://www.npmjs.com/package/redux-mock-store}
+
+npm install cypress -D
+    {to install cypress}
+npx cypress open
+    {to open cypress and to create the initial configuration}
+npm install eslint-plugin-cypress -D
+    {plugin for eslint not complain about cypres}
+
+
 
 
 [ZUSTAND]

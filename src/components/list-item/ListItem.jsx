@@ -1,38 +1,38 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { favoritesActions } from '../../store/favorites';
 import './ListItem.css';
 import Heart from '../heart/Heart';
+import favoriteStore from '../../store/favoriteStore';
 
-function ListItem({ item }) {
-    const favorites = useSelector(({ favorites }) => favorites);
-    const dispatch = useDispatch();
+function ListItem({item}) {
 
-    const { name, sprites } = item;
-    const sprite = sprites.other['official-artwork'].front_default;
-    const isFavorite = favorites?.includes(item.id);
+  const items = favoriteStore(state => state.items);
+  const addItem = favoriteStore(state => state.addItem);
+  const removeItem = favoriteStore(state => state.removeItem);
 
-    const handleClick = () => {
-        if (isFavorite) {
-            dispatch(favoritesActions.remove(item));
-        } else {
-            dispatch(favoritesActions.add(item));
-        }
+  const {name, sprites} = item;
+  const sprite = sprites.other['official-artwork'].front_default;
+  const isFavorite =  items.includes(item.id);
+
+  const handleClick = () => {
+    if (isFavorite) {
+      removeItem(item.id);
+    } else {
+      addItem(item.id);
     }
-
-    return (
-        <li className="list-item" data-testid={`list-item-${item.id}`}>
-            <div className="list-item-image-wrapper">
-                <img alt={name} className="list-item-image" src={sprite} />
-            </div>
-            <p>{name}</p>
-            <div className='list-item-heart-wrapper'>
-                <Heart
-                  onClick={handleClick}
-                  selected={isFavorite}
-                  testId={`heart-${item.id}`} />
-            </div>
-        </li>
-    );
+  };
+  return (
+    <li className="list-item" data-testid={`list-item-${item.id}`}>
+      <div className="list-item-image-wrapper">
+        <img alt={name} className="list-item-image" src={sprite}/>
+      </div>
+      <p>{name}</p>
+      <div className="list-item-heart-wrapper">
+        <Heart
+          onClick={handleClick}
+          selected={isFavorite}
+          testId={`heart-${item.id}`} />
+      </div>
+    </li>
+  );
 }
 
 export default ListItem;
