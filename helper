@@ -25,7 +25,7 @@
 
 [delete a local branch]
 => git branch -D <local-branch>
-    
+
 
 [react commands]
 npx create-react-app {app-name}
@@ -57,7 +57,7 @@ npm i zustand
 
 
 [react dev experience dependencies]
-    {ESLint} extension on VSCode is advised to install to hilight the error 
+    {ESLint} extension on VSCode is advised to install to hilight the error
         React native app already has eslint integrated on package json file. the rules shoulbe be declared there
         Nextjs React app the esling should be installed, and the rules should be declared on the .eslintrc file
 
@@ -72,7 +72,7 @@ npm i zustand
     {Import Cost} extension on VSCode is also advised to show the size of the imported library
 
     {editorconfig} extensions on VSCode is used to configure the editor settings, like indentation spaces, etc.
-        It is necessary t create a file .editorconfig on the root of the project 
+        It is necessary t create a file .editorconfig on the root of the project
         On the IntelliJ is not necessary to install any extensions or plugins, the IDE already has the ESLint integrated
 
     {commitlint}, library to standardize the commit messages, works with husky
@@ -100,6 +100,14 @@ npm i zustand
         require a file .prettierrc on the root of the project, if does not exist the prettier will use the default settings
 
 
+npm i jest -D
+    {to install jest, https://jestjs.io/docs/getting-started}
+
+npm i @testing-library/react @testing-library/dom -D
+    {to install testing-library,    https://testing-library.com/docs/react-testing-library/intro/}
+
+npm i redux-mock-store -D
+    {to install redux-mock-store, https://www.npmjs.com/package/redux-mock-store}
 
 
 [ZUSTAND]
